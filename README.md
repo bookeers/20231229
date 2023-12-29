@@ -66,6 +66,7 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 * test branch 자체적으로 push할 경우:
   -> github에서 pull request 발생. 그 뒤로 처리하면 됩니다.
 * main과 merge 후 main에서 push하고자 하는 경우?:
+  -> conflict를 해결해 주어야 한다.
 
 
 ## further
@@ -81,6 +82,8 @@ git add .으로 한번에 수행할 수 있을까요?
   원격 저장소에 commit이 발생하여 원본과의 충돌이 발생하는 경우입니다. (branch가 동일하더라도 발생 가능!!)
     -> 이런 경우엔? rebase를 통해 해결할 수도 있고, 수동으로 수정하는 것도 가능함!
 
+* non-fastforward 상황에서 충돌 원인을 못 찾겠는 경우엔?
+  -> '파일을 검토 후 데이터가 유실될 걱정이 없는 상황에 한해' push할 브랜치명 앞에 +를 더해서 forced update도 가능
 
 ## question
 
@@ -104,4 +107,5 @@ git add .으로 한번에 수행할 수 있을까요?
   Ex) 최상위 폴더를 만들고 클론해왔으면 그 아래 레포가 하나 더 깔리겠죠?
   그쪽 레포로 이동하셔서 작업을 하셔야지..
 
-* Q7: 왜 push 할때 'origin main'?
+* Q7: 커밋을 잘못했어요...
+  -> 아직 원격에 push하지 않은 경우는 git reset --hard '커밋명' 으로 변경하시면 됩니다.
