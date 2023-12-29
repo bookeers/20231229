@@ -38,7 +38,7 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 
 // status를 확인하면 로컬-로컬에서의 작업과 똑같이 not staged for commit가 발생함.
 
-// 이제 로컬에서와 같이 add와 commit를 진행하고, git push origin main을 시행하면 정상적으로 로컬에서 github로 올라감.
+// 이제 로컬에서와 같이 add와 commit를 진행하고, git push origin main(브랜치명이 main이 아니라면 브랜치명)을 시행하면 정상적으로 로컬에서 github로 올라감.
 
 // github에서 수정된 내용을 가져오고 싶다면? pull 해주세요. 
 
