@@ -28,17 +28,19 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 
 // gitignore 기능: 원하지 않는 파일을 무시하는 기능(각종 조건을 줄 수 있다) 
 
-## from github to local 
+## from github to local , back to github
 
 // 가장 기억해야 할 내용은, clone - pull - push의 흐름
 
-// 디렉토리 생성 후, git clone 기능으로 레포지토리를 가져오기.
+// 디렉토리 생성 후, git clone 기능으로(혹은 남의 것을 사용한다면 fork가 될수도 있겠네요) 레포지토리를 가져오기. (저 이제 이거 갖고 로컬에서 작업합니다?)
 
 // 저장하면, 'modified' 신호가 뜨게 됨.
 
 // status를 확인하면 로컬-로컬에서의 작업과 똑같이 not staged for commit가 발생함.
 
-// 이제 로컬에서와 같이 add와 commit를 진행하고, git push origin main을 시행하면 정상적으로 동작함.
+// 이제 로컬에서와 같이 add와 commit를 진행하고, git push origin main을 시행하면 정상적으로 로컬에서 github로 올라감.
+
+// github에서 수정된 내용을 가져오고 싶다면? pull 해주세요. 
 
 ## question
 
@@ -56,3 +58,6 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 
 * Q5: 왜 master이 아니고 main인가요?
   -> 노예제도 떄문이라네요....
+
+* Q6: push해올때 문제가 발생한다면?
+  -> 폴더명을 맞추셔야 합니다.
