@@ -53,10 +53,6 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 > 현재 작업중인 브랜치를 가리키는 포인터 (어디까지의 commit를 사용하고 있는가?)
 
 ### how?
-> git branch <브랜치명> (만들기만 했음, 아직 이동 안함!!)
-> git switch <브랜치명> (비로소 이동)
-작업 후 main에서와 동일하게 add/commit 가능.
-> branch는 merge하지 않았다면 독립적인 환경, 작업한 파일이 보이지 않아도 안심! 
 
 ### when?
 예를 들어, main과 test branch에서 완전 다른 내용을 작업했다면?
