@@ -69,7 +69,11 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 각각의 수정을 위한 branch의 목적을 달성하고 github에 pull까지 완료했다면?
   -> 지우시면 되죠 뭐. git branch -d (로컬) / git push origin -d (원격 브랜치)
 
-## further
+## fork?
+
+기존에 존재하는 (아마)타인의 레포를 가져와서 작업할 때 사용
+
+## further into the space
 
 * 폴더를 하나 생성하고 레포를 하나 클론해왔다고 가정.
 이전 상위 폴더로 돌아가서 다른 레포를 clone해온다면, 레포 두개에 대한 작업공간을 구축하고, 디렉토리를 이동해가며 각각의 레포에 대한 작업이 가능한 것입니다.
