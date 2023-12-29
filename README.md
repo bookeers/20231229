@@ -3,46 +3,44 @@
 
 ## 핵심 명령어
 
-git add apt.txt // '스테이징' 
+> git add apt.txt // '스테이징' 
 
-git commit -m ~~~ // '메세지를 남김' 
+> git commit -m ~~~ // '메세지를 남김' 
 
-git add . // '모든 파일을 스테이징' 
+> git add . // '모든 파일을 스테이징' 
 
-git status // '커밋할 파일이 있는지, 어떤 상태인지' 
+> git status // '커밋할 파일이 있는지, 어떤 상태인지' 
 
-git log --all// '모든 로그를 보여줌(--oneline은 한번에)' 
-
-(test1에서 이어옴) 한번에 add할수 있을걸? 
+> git log --all// '모든 로그를 보여줌(--oneline은 한번에)' 
 
 ## workflow
-파일 수정 후 add(이 과정에서 not staged -> changes to be comitted로 변경됨) 
+> 파일 수정 후 add(이 과정에서 not staged -> changes to be comitted로 변경됨) 
 
-commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까) 
+> commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까) 
 
-변화사항이 있을까요? // git diff를 통해 '직전 commit'과 아직 commit되지 않은 부분에 대해 비교할 수 있음 
+> 변화사항이 있을까요? // git diff를 통해 '직전 commit'과 아직 commit되지 않은 부분에 대해 비교할 수 있음 
 
-// git difftool을 이용하면 직전 커밋과 비교가능, git difftool '커밋아이디'를 이용하면 해당 커밋의 지점으로 돌아가서 비교가능 
+> git difftool을 이용하면 직전 커밋과 비교가능, git difftool '커밋아이디'를 이용하면 해당 커밋의 지점으로 돌아가서 비교가능 
 
-// git difftool '아이디1' '아이디2' 를 선택하면 두개의 지점을 비교가능 
+> git difftool '아이디1' '아이디2' 를 선택하면 두개의 지점을 비교가능 
 
-// cli가 아닌 gui 환경을 희망한다면 git graph 깔아라~ 
+> cli가 아닌 gui 환경을 희망한다면 git graph 깔아라~ 
 
 // gitignore 기능: 원하지 않는 파일을 무시하는 기능(각종 조건을 줄 수 있다) 
 
 ## from github to local , back to github
 
-// 가장 기억해야 할 내용은, clone - pull - push의 흐름
+> 가장 기억해야 할 내용은, clone - pull - push의 흐름
 
-// 디렉토리 생성 후, git clone 기능으로(혹은 남의 것을 사용한다면 fork가 될수도 있겠네요) 레포지토리를 가져오기. (저 이제 이거 갖고 로컬에서 작업합니다?)
+> 디렉토리 생성 후, git clone 기능으로(혹은 남의 것을 사용한다면 fork가 될수도 있겠네요) 레포지토리를 가져오기. (저 이제 이거 갖고 로컬에서 작업합니다?)
 
-// 로컬에서 작업 후 저장하면, vsc 상에서 'modified' 신호가 뜨게 됨.
+> 로컬에서 작업 후 저장하면, vsc 상에서 'modified' 신호가 뜨게 됨.
 
-// status를 확인하면 로컬-로컬에서의 작업과 똑같이 not staged for commit가 발생함.
+> status를 확인하면 로컬-로컬에서의 작업과 똑같이 not staged for commit가 발생함.
 
-// 이제 로컬에서와 같이 add와 commit를 진행하고, git push origin main(브랜치명이 main이 아니라면 브랜치명)을 시행하면 정상적으로 로컬에서 github로 올라감.
+> 이제 로컬에서와 같이 add와 commit를 진행하고, git push origin main(브랜치명이 main이 아니라면 브랜치명)을 시행하면 정상적으로 로컬에서 github로 올라감.
 
-// github에서 수정된 내용을 가져오고 싶다면? pull 해주세요. 
+> github에서 수정된 내용을 가져오고 싶다면? pull 해주세요. 
 
 ## Co-op (branch)
 
@@ -57,22 +55,26 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 > 내가 보고 있는 branch = 내가 작업하고 있는 폴더. (시점이 다를 수 있음)
 
 ### when?
+
 예를 들어, main과 test branch에서 완전 다른 내용을 작업했다면?
 그냥 merge 하고 push 하면 됩니다.
 
 하지만, 동일한 파일을 수정했다면?
+
 * test branch 자체적으로 push할 경우:
   -> github에서 merge pull request 발생. 그 뒤로 처리하면 됩니다.
 * main과 merge 후 main에서 push하고자 하는 경우?:
   -> conflict를 해결해 주어야 한다.
 
 각각의 수정을 위한 branch의 목적을 달성하고 github에 pull까지 완료했다면?
+
   -> 지우시면 되죠 뭐. git branch -d (로컬) / git push origin -d (원격 브랜치)
 
 ## fork?
 
-기존에 존재하는 (아마)타인의 레포를 가져와서 작업할 때 사용.
-디렉토리를 만들고, 
+기존에 존재하는 (아마)타인의 레포를 가져와서 작업할 때 사용
+
+디렉토리를 만들고, 작업해서, 원본에 반영하고 싶다면 pull request를 통해 처리 
 
 ## further into the space
 
