@@ -18,7 +18,7 @@ git log --all// '모든 로그를 보여줌(--oneline은 한번에)'
 
 commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까) 
 
-변화사항이 있을까요? // git diff를 통해 '직전 commit'과 아직 commit되지 않은 부분에 대해 기록할 수 있음 
+변화사항이 있을까요? // git diff를 통해 '직전 commit'과 아직 commit되지 않은 부분에 대해 비교할 수 있음 
 
 // git difftool을 이용하면 직전 커밋과 비교가능, git difftool '커밋아이디'를 이용하면 해당 커밋의 지점으로 돌아가서 비교가능 
 
@@ -34,7 +34,7 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 
 // 디렉토리 생성 후, git clone 기능으로(혹은 남의 것을 사용한다면 fork가 될수도 있겠네요) 레포지토리를 가져오기. (저 이제 이거 갖고 로컬에서 작업합니다?)
 
-// 저장하면, 'modified' 신호가 뜨게 됨.
+// 로컬에서 작업 후 저장하면, vsc 상에서 'modified' 신호가 뜨게 됨.
 
 // status를 확인하면 로컬-로컬에서의 작업과 똑같이 not staged for commit가 발생함.
 
