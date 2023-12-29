@@ -85,6 +85,9 @@ git add .으로 한번에 수행할 수 있을까요?
 * non-fastforward 상황에서 충돌 원인을 못 찾겠는 경우엔?
   -> '파일을 검토 후 데이터가 유실될 걱정이 없는 상황에 한해' push할 브랜치명 앞에 +를 더해서 forced update도 가능
 
+* main 브랜치가 아닌 다른 branch를 push하는 것도 가능한가요?
+  -> 네맞아요 그걸 merge해야되는거임
+
 ## question
 
 * Q1: 왜 touch 같은 명령어가 vscode 상에서 동작하지 않나요? 
