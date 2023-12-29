@@ -58,6 +58,16 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 작업 후 main에서와 동일하게 add/commit 가능.
 > branch는 merge하지 않았다면 독립적인 환경, 작업한 파일이 보이지 않아도 안심! 
 
+### when?
+예를 들어, main과 test branch에서 완전 다른 내용을 작업했다면?
+그냥 merge 하고 push 하면 됩니다.
+
+하지만, 동일한 파일을 수정했다면?
+* test branch 자체적으로 push할 경우:
+  -> github에서 pull request 발생. 그 뒤로 처리하면 됩니다.
+* main과 merge 후 main에서 push하고자 하는 경우?:
+
+
 ## further
 
 * 폴더를 하나 생성하고 레포를 하나 클론해왔다고 가정.
