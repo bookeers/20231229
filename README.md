@@ -28,6 +28,12 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 
 // gitignore 기능: 원하지 않는 파일을 무시하는 기능(각종 조건을 줄 수 있다) 
 
+## from github to local 
+
+// 디렉토리 생성 후, git clone 기능으로 레포지토리를 가져오기.
+
+// 
+
 ## question
 
 * Q1: 왜 touch 같은 명령어가 vscode 상에서 동작하지 않나요? 
