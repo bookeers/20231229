@@ -64,6 +64,8 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 * main과 merge 후 main에서 push하고자 하는 경우?:
   -> conflict를 해결해 주어야 한다.
 
+각각의 수정을 위한 branch의 목적을 달성하고 github에 pull까지 완료했다면?
+  -> 지우시면 되죠 뭐. git branch -d (로컬) / git push origin -d (원격 브랜치)
 
 ## further
 
