@@ -1,6 +1,8 @@
 # 20231229
 20231229 프로 디지털 아카데미 git 실습
 
+## 핵심 명령어
+
 git add apt.txt // '스테이징' 
 
 git commit -m ~~~ // '메세지를 남김' 
@@ -41,6 +43,16 @@ commit 시 다시 'nothing to commit' 상태가 됨(바뀐걸 커밋했으니까
 // 이제 로컬에서와 같이 add와 commit를 진행하고, git push origin main(브랜치명이 main이 아니라면 브랜치명)을 시행하면 정상적으로 로컬에서 github로 올라감.
 
 // github에서 수정된 내용을 가져오고 싶다면? pull 해주세요. 
+
+## Co-op (branch)
+
+### why?
+> 협업 툴이잖아요? 
+
+### head?
+> 현재 작업중인 브랜치를 가리키는 포인터 (어디까지의 commit를 사용하고 있는가?)
+
+### how?
 
 ## further
 
